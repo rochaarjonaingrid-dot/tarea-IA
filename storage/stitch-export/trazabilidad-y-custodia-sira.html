@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- Reconstruccion local basada en la pantalla y metadatos de Stitch; no es el archivo original exportado. -->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trazabilidad y Custodia SIRA</title>
+    <style>
+        :root{font-family:Inter,Arial,sans-serif;color:#191c1c;background:#f5f7f6}*{box-sizing:border-box}body{margin:0}
+        header{background:#0f3d4c;color:#fff;padding:18px 22px}main{max-width:760px;margin:auto;padding:20px 16px}
+        h1{font-size:24px;margin:4px 0}h2{font-size:16px;margin:0 0 12px}p{color:#59645e}
+        .card{background:#fff;border:1px solid #e2e8e0;border-radius:8px;padding:17px;margin:14px 0}
+        .badge{display:inline-block;background:#e0f2fe;color:#0369a1;border-radius:4px;padding:5px 8px;font-size:12px;font-weight:600}
+        .steps{list-style:none;padding:0;margin:0}.step{position:relative;padding:0 0 24px 34px;border-left:2px solid #bbf7d0;margin-left:10px}
+        .step:last-child{border-left-color:transparent}.dot{position:absolute;left:-10px;top:0;width:18px;height:18px;border:3px solid #1f7a4d;border-radius:50%;background:#fff}
+        .step strong{display:block}.muted{font-size:12px;color:#64716a}.row{display:flex;justify-content:space-between;gap:10px}
+        .map{height:190px;border-radius:6px;background:linear-gradient(135deg,#eaf3ed,#dbe9e1);display:grid;place-items:center;color:#35664a}
+        .button{background:#1f7a4d;color:#fff;border:0;border-radius:4px;padding:10px 14px;font-weight:600}
+    </style>
+</head>
+<body>
+<header><div>SIRA · Trazabilidad</div></header>
+<main><p>Seguimiento de envío</p><div class="row"><h1>Custodia del residuo</h1><span class="badge">En tránsito</span></div>
+    <section class="card"><div class="row"><div><p class="muted">FOLIO</p><strong>SIRA-2026-084</strong></div><div><p class="muted">RESIDUO</p><strong>Solventes usados</strong></div></div></section>
+    <section class="card"><h2>Ruta de transporte</h2><div class="map">Generador　→　Transportista　→　Destino final</div><p class="muted">Última ubicación registrada: Centro de distribución, Querétaro</p></section>
+    <section class="card"><h2>Cadena de custodia</h2><ol class="steps">
+        <li class="step"><span class="dot"></span><strong>Residuo registrado</strong><span class="muted">14 oct 2026 · 08:15 · Planta Norte</span></li>
+        <li class="step"><span class="dot"></span><strong>Entrega al transportista</strong><span class="muted">14 oct 2026 · 09:40 · Firma verificada</span></li>
+        <li class="step"><span class="dot"></span><strong>En tránsito al destino</strong><span class="muted">14 oct 2026 · 10:05 · Custodia activa</span></li>
+        <li class="step"><span class="dot"></span><strong>Recepción en destino final</strong><span class="muted">Pendiente</span></li>
+    </ol></section>
+    <button class="button">Ver manifiesto</button>
+</main>
+</body>
+</html>

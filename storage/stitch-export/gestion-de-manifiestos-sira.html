@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- Reconstruccion local basada en la pantalla y metadatos de Stitch; no es el archivo original exportado. -->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestión de Manifiestos SIRA</title>
+    <style>
+        :root{font-family:Inter,Arial,sans-serif;color:#191c1c;background:#f5f7f6}*{box-sizing:border-box}body{margin:0}
+        header{background:#0f3d4c;color:#fff;padding:18px 22px}main{max-width:900px;margin:auto;padding:22px 16px}
+        h1{font-size:24px;margin:6px 0}h2{font-size:17px;margin:0}p{color:#59645e;margin:6px 0}
+        .brand{font-size:12px;letter-spacing:.08em;color:#d2efdf}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}
+        .card{background:#fff;border:1px solid #e2e8e0;border-radius:8px;padding:16px;margin:14px 0}
+        .filters{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}input,select{width:100%;padding:10px;border:1px solid #cbd5d1;border-radius:4px;background:#fff;font:inherit}
+        .button{border:0;background:#1f7a4d;color:#fff;border-radius:4px;padding:10px 14px;font-weight:600}
+        .badge{font-size:12px;font-weight:600;padding:5px 8px;border-radius:4px;background:#e0f2fe;color:#0369a1}.pending{background:#fef3c7;color:#92400e}
+        .muted{font-size:12px;color:#64716a}.actions{color:#1f7a4d;text-decoration:none;font-weight:600}
+        @media(max-width:540px){.filters{grid-template-columns:1fr}.row{align-items:flex-start}}
+    </style>
+</head>
+<body>
+<header><div class="brand">SIRA · GESTIÓN AMBIENTAL</div><div class="row"><strong>Manifiestos</strong><span>☰</span></div></header>
+<main>
+    <p>Control documental</p><div class="row"><h1>Gestión de Manifiestos</h1><button class="button">＋ Crear manifiesto</button></div>
+    <section class="card" aria-label="Filtros de manifiestos">
+        <h2>Buscar y filtrar</h2><div class="filters"><input type="search" placeholder="Buscar por folio o generador"><select><option>Todos los estados</option><option>En tránsito</option><option>Pendiente</option><option>Concluido</option></select></div>
+    </section>
+    <article class="card"><div class="row"><div><p class="muted">FOLIO SIRA-2026-084</p><h2>Residuos de mantenimiento industrial</h2></div><span class="badge">En tránsito</span></div><p>Generador: Planta Norte · 14 oct 2026</p><div class="row"><span class="muted">Transportista: Logística Ambiental</span><a class="actions" href="#">Ver detalle →</a></div></article>
+    <article class="card"><div class="row"><div><p class="muted">FOLIO SIRA-2026-083</p><h2>Solventes y materiales contaminados</h2></div><span class="badge pending">Pendiente</span></div><p>Generador: Servicios Industriales · 13 oct 2026</p><div class="row"><span class="muted">Falta firma de recepción</span><a class="actions" href="#">Ver detalle →</a></div></article>
+    <article class="card"><div class="row"><div><p class="muted">FOLIO SIRA-2026-082</p><h2>Envases con residuos peligrosos</h2></div><span class="badge">Concluido</span></div><p>Generador: Operaciones Centro · 10 oct 2026</p><div class="row"><span class="muted">Documentación completa</span><a class="actions" href="#">Ver detalle →</a></div></article>
+</main>
+</body>
+</html>

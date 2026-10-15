@@ -1,0 +1,39 @@
+<!doctype html>
+<!-- Reconstruccion local basada en la pantalla y metadatos de Stitch; no es el archivo original exportado. -->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard Operativo SIRA</title>
+    <style>
+        :root{font-family:Inter,Arial,sans-serif;color:#191c1c;background:#f5f7f6;font-synthesis:none}
+        *{box-sizing:border-box}body{margin:0}header{background:#0f3d4c;color:#fff;padding:18px 22px}
+        main{max-width:960px;margin:auto;padding:24px 18px}h1{font-size:25px;margin:0 0 5px}h2{font-size:17px;margin:0 0 14px}
+        p{margin:5px 0;color:#59645e}.brand{font-size:13px;letter-spacing:.08em;font-weight:700;color:#d2efdf}
+        .row{display:flex;justify-content:space-between;align-items:center;gap:12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:20px 0}
+        .card{background:#fff;border:1px solid #e2e8e0;border-radius:8px;padding:18px;margin-bottom:16px}
+        .metric{font-size:28px;font-weight:700;color:#0f3d4c;margin:6px 0}.label{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#64716a}
+        .badge{display:inline-block;padding:5px 8px;border-radius:4px;background:#dcfce7;color:#166534;font-size:12px;font-weight:600}
+        .warning{background:#fef3c7;color:#92400e}.action{background:#1f7a4d;color:#fff;padding:10px 14px;border-radius:4px;text-decoration:none;font-weight:600}
+        table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:11px 8px;border-bottom:1px solid #e2e8f0}th{font-size:11px;letter-spacing:.05em;color:#64716a}
+        @media(max-width:560px){main{padding:18px 12px}.hide-mobile{display:none}td,th{padding:9px 4px}}
+    </style>
+</head>
+<body>
+<header><div class="brand">SIRA · GESTIÓN AMBIENTAL</div><div class="row"><strong>Panel operativo</strong><span>☰</span></div></header>
+<main>
+    <div class="row"><div><p>Resumen de operaciones</p><h1>Dashboard Operativo</h1></div><a class="action" href="#">＋ Nuevo manifiesto</a></div>
+    <section class="grid" aria-label="Indicadores">
+        <article class="card"><div class="label">Manifiestos activos</div><div class="metric">24</div><span class="badge">En seguimiento</span></article>
+        <article class="card"><div class="label">Residuos gestionados</div><div class="metric">12.8 t</div><p>Periodo actual</p></article>
+        <article class="card"><div class="label">Pendientes de firma</div><div class="metric">3</div><span class="badge warning">Requieren atención</span></article>
+    </section>
+    <section class="card"><div class="row"><h2>Actividad reciente</h2><a href="#">Ver todos</a></div>
+        <table><thead><tr><th>FOLIO</th><th>GENERADOR</th><th class="hide-mobile">FECHA</th><th>ESTADO</th></tr></thead>
+        <tbody><tr><td>SIRA-2026-084</td><td>Planta Norte</td><td class="hide-mobile">14 oct 2026</td><td><span class="badge">En tránsito</span></td></tr>
+        <tr><td>SIRA-2026-083</td><td>Servicios Industriales</td><td class="hide-mobile">13 oct 2026</td><td><span class="badge warning">Pendiente</span></td></tr></tbody></table>
+    </section>
+    <section class="card"><h2>Alertas de cumplimiento</h2><p><span class="badge warning">Próximo a vencer</span> Revisa los manifiestos que se acercan al límite de almacenamiento temporal.</p></section>
+</main>
+</body>
+</html>

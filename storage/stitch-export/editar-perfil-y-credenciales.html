@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Reconstruccion local basada en la pantalla y metadatos de Stitch; no es el archivo original exportado. -->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Editar Perfil y Credenciales</title>
+    <style>
+        :root{font-family:Inter,Arial,sans-serif;color:#191c1c;background:#f5f7f6}*{box-sizing:border-box}body{margin:0}
+        header{background:#0f3d4c;color:#fff;padding:18px 22px}main{max-width:720px;margin:auto;padding:20px 15px}
+        h1{font-size:24px;margin:5px 0}h2{font-size:16px;margin:0 0 14px}p{color:#59645e}
+        .card{background:#fff;border:1px solid #e2e8e0;border-radius:8px;padding:18px;margin:14px 0}
+        label{display:block;font-size:13px;font-weight:600;margin:12px 0 5px}input,select{width:100%;padding:11px;border:1px solid #cbd5d1;border-radius:4px;font:inherit;background:#fff}
+        .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.button{padding:11px 15px;color:#fff;background:#1f7a4d;border:0;border-radius:4px;font-weight:600}
+        .secondary{padding:10px 14px;background:#fff;color:#0f3d4c;border:1px solid #0f3d4c;border-radius:4px}
+        .muted{font-size:12px;color:#64716a}.actions{display:flex;justify-content:flex-end;gap:10px;margin-top:16px}
+        @media(max-width:520px){.row{grid-template-columns:1fr}}
+    </style>
+</head>
+<body>
+<header><div>‹　Configuración de cuenta</div></header>
+<main><p>Cuenta y seguridad</p><h1>Editar perfil</h1><p>Actualiza tu información de usuario y credenciales de acceso.</p>
+    <section class="card"><h2>Información personal</h2><div class="row"><div><label for="name">Nombre</label><input id="name" value="María"></div><div><label for="last-name">Apellidos</label><input id="last-name" value="García"></div></div>
+        <label for="email">Correo electrónico</label><input id="email" type="email" value="maria.garcia@example.com">
+        <label for="phone">Teléfono</label><input id="phone" type="tel" placeholder="+52">
+        <label for="role">Rol de usuario</label><select id="role"><option>Administrador de empresa</option><option>Responsable ambiental</option></select>
+    </section>
+    <section class="card"><h2>Cambiar contraseña</h2><p class="muted">Deja estos campos vacíos si no deseas cambiarla.</p>
+        <label for="current-password">Contraseña actual</label><input id="current-password" type="password" placeholder="••••••••">
+        <label for="new-password">Nueva contraseña</label><input id="new-password" type="password" placeholder="••••••••">
+        <label for="confirm-password">Confirmar nueva contraseña</label><input id="confirm-password" type="password" placeholder="••••••••">
+    </section>
+    <div class="actions"><button class="secondary">Cancelar</button><button class="button">Guardar cambios</button></div>
+</main>
+</body>
+</html>
